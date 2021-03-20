@@ -123,8 +123,9 @@ function mouseReleased(){
   slingShot.fly();
 }
 function keyPressed(){
-  if(keyCode === 32)
+  if(keyCode === SPACE)
 {
+  Matter.Body.setPosition(ball.body,{x:100,y:200});
   slingShot.attach(ball.body);
 }
 }
